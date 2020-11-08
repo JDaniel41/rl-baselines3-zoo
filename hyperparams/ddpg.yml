@@ -181,3 +181,9 @@ InvertedPendulumSwingupBulletEnv-v0:
   n_episodes_rollout: 1
   learning_rate: !!float 1e-3
   policy_kwargs: "dict(net_arch=[400, 300])"
+
+MiniGrid-Empty-6x6-v0:
+    env_wrapper:
+        gym_minigrid.wrappers.RGBImgPartialObsWrapper
+        gym_minigrid.wrappers.ImgObsWrapper
+    

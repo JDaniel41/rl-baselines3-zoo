@@ -1,4 +1,4 @@
-atari:
+fatari:
   env_wrapper:
     - stable_baselines3.common.atari_wrappers.AtariWrapper
   frame_stack: 4
@@ -234,3 +234,9 @@ ReacherBulletEnv-v0:
   learning_rate: lin_0.0008
   use_sde: True
   policy_kwargs: "dict(log_std_init=-2, ortho_init=False)"
+
+MiniGrid-Empty-6x6-v0:
+    env_wrapper:
+        gym_minigrid.wrappers.RGBImgPartialObsWrapper
+        gym_minigrid.wrappers.ImgObsWrapper
+    

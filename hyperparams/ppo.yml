@@ -358,6 +358,12 @@ MiniGrid-FourRooms-v0:
   ent_coef: 0.0
   learning_rate: 2.5e-4
   clip_range: 0.2
+  
+MiniGrid-Empty-6x6-v0:
+    env_wrapper:
+        gym_minigrid.wrappers.RGBImgPartialObsWrapper
+        gym_minigrid.wrappers.ImgObsWrapper
+    
 
 CarRacing-v0:
   env_wrapper:
