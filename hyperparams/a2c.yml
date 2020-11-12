@@ -237,6 +237,9 @@ ReacherBulletEnv-v0:
 
 MiniGrid-Empty-6x6-v0:
     env_wrapper:
-        gym_minigrid.wrappers.RGBImgPartialObsWrapper
-        gym_minigrid.wrappers.ImgObsWrapper
+        - gym_minigrid.wrappers.RGBImgPartialObsWrapper
+        - gym_minigrid.wrappers.ImgObsWrapper
+    policy: 'MlpPolicy'
+    n_timesteps: !!float 1e7
+    n_envs: 8
     
